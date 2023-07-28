@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TreatsHub</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general_style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script
+      src="https://kit.fontawesome.com/ced9a6871b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="icon_pngs/logo.png" alt="logo" />
+        TreatsHub
+      </a>
+
+      <nav class="menu btns" id="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Our Menu</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="icons btns">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-user" id="user"></i>
+      </div>
+
+      <div class="hamburger__wrapper hidden">
+        <span class="hamburger top__bar"></span>
+        <span class="hamburger mid__bar"></span>
+        <span class="hamburger base__bar"></span>
+      </div>
+    </header>
+
+    <!-- The overlay and modal section start -->
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+      <div class="buttons">
+        <span class="sign-in__btn focus">Sign in</span>
+        <span class="register__btn">Register</span>
+      </div>
+
+      <!-- The sign in panel ends -->
+      <form action="#" class="sign-in__block">
+        <h2 class="sign-in__note">Welcome Back</h2>
+
+        <div class="google__option">
+          <img
+            src="/icon_pngs/icons8-google-48.png"
+            alt="google icon"
+            class="google__icon"
+          />
+          <a href="https://mail.google.com" class="email__link"
+            >Sign in with Google</a
+          >
+        </div>
+
+        <span class="alt__word">or sign in with username</span>
+
+        <div class="user__field">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Username" required />
+        </div>
+
+        <div class="user__field passcode">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password" required />
+          <i class="fa-regular fa-eye eye"></i>
+        </div>
+
+        <div class="extra__block">
+          <a href="#" class="forgot__link">Forgot password</a>
+        </div>
+
+        <input type="submit" value="Sign in" />
+      </form>
+      <!-- The sign in panel ends -->
+
+      <!-- The register panel starts -->
+      <form action="#" class="register__block hide">
+        <h2 class="sign-in__note">Register Now</h2>
+
+        <div class="google__option">
+          <img
+            src="/icon_pngs/icons8-google-48.png"
+            alt="google icon"
+            class="google__icon"
+          />
+          <a href="https://mail.google.com" class="email__link"
+            >Register with Google</a
+          >
+        </div>
+
+        <span class="alt__word">or register with username</span>
+
+        <div class="user__field">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Username" required />
+        </div>
+
+        <div class="user__field passcode">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password" required />
+          <i class="fa-regular fa-eye eye"></i>
+          <!-- </span> -->
+        </div>
+
+        <div class="user__field passcode pass-conf__field">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Re-enter password" required />
+          <i class="fa-regular fa-eye eye"></i>
+        </div>
+
+        <input type="submit" value="Register Now" />
+      </form>
+      <!-- The register panel ends -->
+
+      <span class="close__modal">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+    </div>
+    <!-- The overlay and modal section end -->
+
+    <!-- Everything on the page aside the header -->
+    <main>
+      <section class="hero__section section__spacing">
+        <div class="hero__wrapper">
+          <div class="hero__content flex">
+            <h1 class="hero__title">
+              Affordable Quality Cakes & Pastries At Your Door
+            </h1>
+            <p class="hero__description section__description">
+              TreatsHub is your go-to destination for delectable cakes and
+              pastries delivered right to your doorstep. Our team of skilled
+              bakers craft mouthwatering cakes and pastries using only the
+              finest ingredients, ensuring every bite is a delightful
+              experience. With our easy-to-use online platform, you can
+              conveniently order your favorite treats anytime, anywhere. Whether
+              you're celebrating a special occasion or simply satisfying your
+              sweet cravings, TreatsHub is here to make your day extra special.
+              Say goodbye to long lines and expensive desserts &mdash; indulge
+              in our price-friendly creations and let us bring the joy of
+              freshly baked goodness to your doorstep.
+            </p>
+
+            <div class="hero__links inline__flex hero__nav">
+              <a href="#" class="btn inline__flex">
+                <span class="btn__text">Order Now</span>
+                <span class="btn__icon">&rarr;</span>
+              </a>
+
+              <a class="tutorial__link inline__flex">
+                <span class="tut__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    fill="#ee5622"
+                    color="#ee5622"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
+                    ></path>
+                  </svg>
+                </span>
+                Watch a quick tutorial on <br />
+                How to place order
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__image__box">
+            <img
+              src="images/hero-image.png"
+              class="img hero__image"
+              alt="an image that features a fruit cake, cup cake, and red velvet"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="about__section section__spacing">
+        <div class="section__wrapper">
+          <div class="about__image__box flex">
+            <img
+              src="images/about_image.jpg"
+              class="img about__image"
+              alt="a photo of a baker woman"
+            />
+          </div>
+
+          <div class="about__content flex">
+            <span class="section__title">Welcome to TreatsHub</span>
+            <h3 class="section__subtitle">The best treat in town awaits you</h3>
+            <p class="about__us section__description">
+              TreatsHub is your one-stop destination for affordable and
+              high-quality cakes and pastries. We specialize in crafting
+              delectable treats using premium ingredients, ensuring a delightful
+              experience with every bite. With our convenient online platform,
+              you can easily order your favorite cakes and pastries and have
+              them delivered straight to your doorstep. <br />
+              <br />
+              At TreatsHub, we believe that everyone deserves to indulge in
+              delicious baked goods without compromising on quality or breaking
+              the bank. We take pride in our commitment to exceptional customer
+              service, ensuring your ordering process is seamless and enjoyable.
+              With our affordable prices and convenient delivery service,
+              TreatsHub is here to add a touch of sweetness to your life's
+              moments, big or small.
+            </p>
+
+            <a href="about.html" class="section__link inline__flex read">
+              Read More &rarr;
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="why__section section__spacing">
+        <div class="section__wrapper">
+          <div class="content__wrapper flex">
+            <div class="container">
+              <span class="section__title">why TreatsHub</span>
+              <article class="sub__section">
+                <span class="icon__wrapper inline__flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#221e22"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M232,64H203.31l26.35-26.34a8,8,0,0,0-11.32-11.32L192,52.69V24a8,8,0,0,0-16,0V56.57a64,64,0,0,0-77.2,10.12l0,0,0,0,0,0c-40.1,39.39-70.25,133.08-73.19,142.45a16,16,0,0,0,21.26,21.26c9.37-2.94,103.18-33.13,142.47-73.21A64,64,0,0,0,199.43,80H232a8,8,0,0,0,0-16Zm-54.12,82c-8.94,9.12-21.25,17.8-34.85,25.73l-25.38-25.39a8,8,0,0,0-11.32,11.32l22.09,22.09c-40.87,21.19-86.32,35.42-87,35.63A7.93,7.93,0,0,0,40,216a7.93,7.93,0,0,0,.59-1.41c.29-.93,28-89.58,64-130.67l33.77,33.77a8,8,0,0,0,11.32-11.32L116.18,72.88A48,48,0,0,1,177.88,146Z"
+                    ></path>
+                  </svg>
+                </span>
+
+                <div class="details">
+                  <h3>Quality Ingredients</h3>
+                  <p>
+                    We source the freshest ingredients to ensure exceptional
+                    taste and flavor in every bite.
+                  </p>
+                </div>
+              </article>
+
+              <article class="sub__section">
+                <span class="icon__wrapper inline__flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#221e22"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm109.94-52.79a8,8,0,0,0-3.89-5.4l-29.83-17-.12-33.62a8,8,0,0,0-2.83-6.08,111.91,111.91,0,0,0-36.72-20.67,8,8,0,0,0-6.46.59L128,41.85,97.88,25a8,8,0,0,0-6.47-.6A112.1,112.1,0,0,0,54.73,45.15a8,8,0,0,0-2.83,6.07l-.15,33.65-29.83,17a8,8,0,0,0-3.89,5.4,106.47,106.47,0,0,0,0,41.56,8,8,0,0,0,3.89,5.4l29.83,17,.12,33.62a8,8,0,0,0,2.83,6.08,111.91,111.91,0,0,0,36.72,20.67,8,8,0,0,0,6.46-.59L128,214.15,158.12,231a7.91,7.91,0,0,0,3.9,1,8.09,8.09,0,0,0,2.57-.42,112.1,112.1,0,0,0,36.68-20.73,8,8,0,0,0,2.83-6.07l.15-33.65,29.83-17a8,8,0,0,0,3.89-5.4A106.47,106.47,0,0,0,237.94,107.21Zm-15,34.91-28.57,16.25a8,8,0,0,0-3,3c-.58,1-1.19,2.06-1.81,3.06a7.94,7.94,0,0,0-1.22,4.21l-.15,32.25a95.89,95.89,0,0,1-25.37,14.3L134,199.13a8,8,0,0,0-3.91-1h-.19c-1.21,0-2.43,0-3.64,0a8.08,8.08,0,0,0-4.1,1l-28.84,16.1A96,96,0,0,1,67.88,201l-.11-32.2a8,8,0,0,0-1.22-4.22c-.62-1-1.23-2-1.8-3.06a8.09,8.09,0,0,0-3-3.06l-28.6-16.29a90.49,90.49,0,0,1,0-28.26L61.67,97.63a8,8,0,0,0,3-3c.58-1,1.19-2.06,1.81-3.06a7.94,7.94,0,0,0,1.22-4.21l.15-32.25a95.89,95.89,0,0,1,25.37-14.3L122,56.87a8,8,0,0,0,4.1,1c1.21,0,2.43,0,3.64,0a8.08,8.08,0,0,0,4.1-1l28.84-16.1A96,96,0,0,1,188.12,55l.11,32.2a8,8,0,0,0,1.22,4.22c.62,1,1.23,2,1.8,3.06a8.09,8.09,0,0,0,3,3.06l28.6,16.29A90.49,90.49,0,0,1,222.9,142.12Z"
+                    ></path>
+                  </svg>
+                </span>
+
+                <div class="details">
+                  <h3>Customization Options</h3>
+                  <p>
+                    We offer a wide range of customization options, whether it's
+                    a personalized message, unique designs, or dietary
+                    requirements to meet your preferences and special occasions.
+                  </p>
+                </div>
+              </article>
+
+              <article class="sub__section">
+                <span class="icon__wrapper inline__flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#221e22"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M232,112a24,24,0,0,0-24-24H136V79a32.06,32.06,0,0,0,24-31c0-28-26.44-45.91-27.56-46.66a8,8,0,0,0-8.88,0C122.44,2.09,96,20,96,48a32.06,32.06,0,0,0,24,31v9H48a24,24,0,0,0-24,24v23.33a40.84,40.84,0,0,0,8,24.24V200a24,24,0,0,0,24,24H200a24,24,0,0,0,24-24V159.57a40.84,40.84,0,0,0,8-24.24ZM112,48c0-13.57,10-24.46,16-29.79,6,5.33,16,16.22,16,29.79a16,16,0,0,1-32,0ZM40,112a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8v23.33c0,13.25-10.46,24.31-23.32,24.66A24,24,0,0,1,168,136a8,8,0,0,0-16,0,24,24,0,0,1-48,0,8,8,0,0,0-16,0,24,24,0,0,1-24.68,24C50.46,159.64,40,148.58,40,135.33Zm160,96H56a8,8,0,0,1-8-8V172.56A38.77,38.77,0,0,0,62.88,176a39.69,39.69,0,0,0,29-11.31A40.36,40.36,0,0,0,96,160a40,40,0,0,0,64,0,40.36,40.36,0,0,0,4.13,4.67A39.67,39.67,0,0,0,192,176c.38,0,.76,0,1.14,0A38.77,38.77,0,0,0,208,172.56V200A8,8,0,0,1,200,208Z"
+                    ></path>
+                  </svg>
+                </span>
+
+                <div class="details">
+                  <h3>Freshly Made-to-Order</h3>
+                  <p>
+                    All our cakes and pastries are made-to-order to guarantee
+                    freshness, ensuring that customers receive their treats at
+                    the peak of flavor and texture.
+                  </p>
+                </div>
+              </article>
+
+              <article class="sub__section">
+                <span class="icon__wrapper inline__flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#221e22"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M230.33,141.06a24.43,24.43,0,0,0-21.24-4.23l-41.84,9.62A28,28,0,0,0,140,112H89.94a31.82,31.82,0,0,0-22.63,9.37L44.69,144H16A16,16,0,0,0,0,160v40a16,16,0,0,0,16,16H120a7.93,7.93,0,0,0,1.94-.24l64-16a6.94,6.94,0,0,0,1.19-.4L226,182.82l.44-.2a24.6,24.6,0,0,0,3.93-41.56ZM16,160H40v40H16Zm203.43,8.21-38,16.18L119,200H56V155.31l22.63-22.62A15.86,15.86,0,0,1,89.94,128H140a12,12,0,0,1,0,24H112a8,8,0,0,0,0,16h32a8.32,8.32,0,0,0,1.79-.2l67-15.41.31-.08a8.6,8.6,0,0,1,6.3,15.9ZM164,96a36,36,0,0,0,5.9-.48,36,36,0,1,0,28.22-47A36,36,0,1,0,164,96Zm60-12a20,20,0,1,1-20-20A20,20,0,0,1,224,84ZM164,40a20,20,0,0,1,19.25,14.61,36,36,0,0,0-15,24.93A20.42,20.42,0,0,1,164,80a20,20,0,0,1,0-40Z"
+                    ></path>
+                  </svg>
+                </span>
+
+                <div class="details">
+                  <h3>Price-Friendly</h3>
+                  <p>
+                    Our business focuses on providing affordable prices without
+                    compromising on quality. You can enjoy indulgent cakes and
+                    pastries without breaking the bank.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <figure class="image__box flex">
+            <img
+              src="images/assortment-pieces-cake.jpg"
+              class="img"
+              alt="assotment pieces cake"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="how__section section__spacing">
+        <div class="wrapper">
+          <div class="section__header">
+            <span class="section__title">how it works</span>
+            <p class="section__subtitle">
+              Order your delectable treat in 3 simple steps
+            </p>
+          </div>
+
+          <div class="step__wrapper">
+            <div class="section__step">
+              <figure class="image__box">
+                <img
+                  src="illustrations/sign_up.svg"
+                  alt="an image of a person signing up for an account"
+                  class="illustration"
+                />
+              </figure>
+
+              <h4>Take two mins to sign up</h4>
+              <p>
+                Click on the sign up button, input the required details to set
+                up your account
+              </p>
+
+              <div class="num__wrapper inline__flex">
+                <span class="num inline__flex">1</span>
+              </div>
+            </div>
+
+            <div class="section__step">
+              <figure class="image__box">
+                <img
+                  src="illustrations/order_checkout.svg"
+                  alt="an image of a person signing up for an account"
+                  class="illustration"
+                />
+              </figure>
+
+              <h4>Choose Menu and Order</h4>
+              <p>
+                Explore our menu of delectable treats and order, using the order
+                button
+              </p>
+
+              <div class="num__wrapper inline__flex">
+                <span class="num inline__flex">2</span>
+              </div>
+            </div>
+
+            <div class="section__step">
+              <figure class="image__box">
+                <img
+                  src="illustrations/delivery.svg"
+                  alt="an image of a person signing up for an account"
+                  class="illustration"
+                />
+              </figure>
+
+              <h4>Wait for Delivery</h4>
+              <p>
+                Now sit back, relax, wait for your order to be delivered to your
+                doorstep
+              </p>
+
+              <div class="num__wrapper inline__flex">
+                <span class="num inline__flex">3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu__section section__spacing">
+        <div class="menu__box">
+          <div class="centered__title">Our Menu</div>
+          <ul class="our__menu">
+            <li class="our__menu__item inline__flex">
+              <img
+                src="icon_pngs/icons8-cake-48.png"
+                alt="cake logo"
+                class="icon"
+              />
+              <span class="text active">Cakes</span>
+            </li>
+
+            <li class="our__menu__item inline__flex">
+              <img
+                src="icon_pngs/icons8-samosa-64.png"
+                alt="samosa logo"
+                class="icon"
+              />
+              <span class="text">Pastries</span>
+            </li>
+
+            <li class="our__menu__item inline__flex">
+              <img
+                src="icon_pngs/icons8-iced-coffee-48.png"
+                alt="cake logo"
+                class="icon"
+              />
+              <span class="text">Beverages</span>
+            </li>
+
+            <!-- <li class="our__menu__item inline__flex">
+              <img src="icon_pngs/new cat.png" alt="cake logo" class="icon" />
+              <span class="text">Catering</span>
+            </li> -->
+          </ul>
+
+          <div class="items">
+            <article>
+              <img
+                src="images/chocolate cake.jpg"
+                alt="chocolate"
+                class="cake__image"
+              />
+
+              <h4 class="cake__name">Chocolate Cake</h4>
+              <p class="cake__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam id aliquam dignissimos temporibus reprehenderit
+                doloremque sint quam officia veritatis ad!
+              </p>
+
+              <div class="pricing__box">
+                <span class="price inline__flex">
+                  Starting &nbsp; <i class="ph ph-currency-ngn"></i>15,000
+                </span>
+                <a href="about.html" class="section__link inline__flex">
+                  Order Now &rarr;
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="images/fruit cake.jpg"
+                alt="fruit cake"
+                class="cake__image"
+              />
+
+              <h4 class="cake__name">Fruit Cake</h4>
+              <p class="cake__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam id aliquam dignissimos temporibus reprehenderit
+                doloremque sint quam officia veritatis ad!
+              </p>
+
+              <div class="pricing__box">
+                <span class="price">Starting at #15,000</span>
+                <a href="about.html" class="section__link inline__flex">
+                  Order Now &rarr;
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="images/vanilla cake.jpg"
+                alt="vanilla cake"
+                class="cake__image"
+              />
+
+              <h4 class="cake__name">Vanilla Cake</h4>
+              <p class="cake__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam id aliquam dignissimos temporibus reprehenderit
+                doloremque sint quam officia veritatis ad!
+              </p>
+
+              <div class="pricing__box">
+                <span class="price">Starting at #15,000</span>
+                <a href="about.html" class="section__link inline__flex">
+                  Order Now &rarr;
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="images/red velvet.jpg"
+                alt="red velvet cake"
+                class="cake__image"
+              />
+
+              <h4 class="cake__name">Red Velvet Cake</h4>
+              <p class="cake__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam id aliquam dignissimos temporibus reprehenderit
+                doloremque sint quam officia veritatis ad!
+              </p>
+
+              <div class="pricing__box">
+                <span class="price">Starting at #15,000</span>
+                <a href="about.html" class="section__link inline__flex">
+                  Order Now &rarr;
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="images/carrot cake.jpg"
+                alt="carrot cake"
+                class="cake__image"
+              />
+
+              <h4 class="cake__name">Carrot Cake</h4>
+              <p class="cake__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam id aliquam dignissimos temporibus reprehenderit
+                doloremque sint quam officia veritatis ad!
+              </p>
+
+              <div class="pricing__box">
+                <span class="price">Starting at #15,000</span>
+                <a href="about.html" class="section__link inline__flex">
+                  Order Now &rarr;
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="images/chocolate cake.jpg"
+                alt="chocolate"
+                class="cake__image"
+              />
+
+              <h4 class="cake__name">Chocolate Cake</h4>
+              <p class="cake__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam id aliquam dignissimos temporibus reprehenderit
+                doloremque sint quam officia veritatis ad!
+              </p>
+
+              <div class="pricing__box">
+                <span class="price">Starting at #15,000</span>
+                <a href="about.html" class="section__link inline__flex">
+                  Order Now &rarr;
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="images/chocolate cake.jpg"
+                alt="chocolate"
+                class="cake__image"
+              />
+
+              <h4 class="cake__name">Chocolate Cake</h4>
+              <p class="cake__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam id aliquam dignissimos temporibus reprehenderit
+                doloremque sint quam officia veritatis ad!
+              </p>
+
+              <div class="pricing__box">
+                <span class="price">Starting at #15,000</span>
+                <a href="about.html" class="section__link inline__flex">
+                  Order Now &rarr;
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <span class="centered__btn">
+          <a href="#" class="btn inline__flex">
+            <span class="btn__text">See More</span>
+            <span class="btn__icon">&rarr;</span>
+          </a>
+        </span>
+      </section>
+
+      <section class="testimonial__section section__spacing">
+        <div class="wrapper">
+          <div class="centered__title">Testimonials</div>
+          <div class="section__subtitle centered__align">
+            What <span class="active">Customers Say</span>
+          </div>
+
+          <div class="testimonial__box">
+            <figure class="testimonial">
+              <img src="images/about_image.jpg" alt="testimonial image" />
+              <span class="testimonial__name">Lorem, ipsum.</span>
+              <blockquote class="testimonial__words">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                voluptatibus reprehenderit quibusdam similique recusandae
+                repellendus doloribus! Cupiditate ut, fugit, alias eius
+                obcaecati, placeat temporibus vel libero quibusdam recusandae
+                provident eveniet."
+              </blockquote>
+            </figure>
+
+            <figure class="testimonial">
+              <img src="images/about_image.jpg" alt="" class="img" />
+              <span class="testimonial__name">Lorem, ipsum.</span>
+              <blockquote class="testimonial__words">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                voluptatibus reprehenderit quibusdam similique recusandae
+                repellendus doloribus! Cupiditate ut, fugit, alias eius
+                obcaecati, placeat temporibus vel libero quibusdam recusandae
+                provident eveniet.
+              </blockquote>
+            </figure>
+
+            <figure class="testimonial">
+              <img src="images/about_image.jpg" alt="" class="img" />
+              <span class="testimonial__name">Lorem, ipsum.</span>
+              <blockquote class="testimonial__words">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                voluptatibus reprehenderit quibusdam similique recusandae
+                repellendus doloribus! Cupiditate ut, fugit, alias eius
+                obcaecati, placeat temporibus vel libero quibusdam recusandae
+                provident eveniet.
+              </blockquote>
+            </figure>
+
+            <figure class="testimonial">
+              <img src="images/about_image.jpg" alt="" class="img" />
+              <span class="testimonial__name">Lorem, ipsum.</span>
+              <blockquote class="testimonial__words">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                voluptatibus reprehenderit quibusdam similique recusandae
+                repellendus doloribus! Cupiditate ut, fugit, alias eius
+                obcaecati, placeat temporibus vel libero quibusdam recusandae
+                provident eveniet.
+              </blockquote>
+            </figure>
+          </div>
+
+          <span class="centered__btn">
+            <a href="#" class="btn inline__flex">
+              <span class="btn__text">See More</span>
+              <span class="btn__icon">&rarr;</span>
+            </a>
+          </span>
+        </div>
+      </section>
+
+      <section class="cta__section section__spacing">
+        <div class="cta__box">
+          <h2 class="discount__text">Get 20% discount off your first order</h2>
+          <p class="brand__summary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sint
+            perspiciatis unde, distinctio maxime non labore nesciunt aspernatur
+            dicta libero soluta veniam? Quos non dolorem totam incidunt dolores
+            cum vero?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatem quod incidunt nemo neque voluptatum.
+          </p>
+
+          <!-- <div class="form__box inline__flex"> -->
+
+          <div class="newsletter">
+            <form action="#">
+              <input
+                type="mail"
+                name="new member"
+                placeholder="example@gmail.com"
+                class="newsletter__mail"
+              />
+              <button type="submit" class="subscribe__btn">Subscribe</button>
+            </form>
+          </div>
+          <span class="updates"
+            >Get digital marketing updates in your mail</span
+          >
+        </div>
+      </section>
+
+      <section class="footer__section section__spacing">
+        <div class="footer--wrapper">
+          <div class="footer__links__box logo__icons">
+            <a href="index.html" class="logo" id="logo">
+              <img src="icon_pngs/logo.png" alt="logo" />
+              TreatsHub
+            </a>
+
+            <div class="social__media">
+              <span class="social__wrapper inline__flex">
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+
+              <span class="social__wrapper inline__flex">
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+
+              <span class="social__wrapper inline__flex">
+                <i class="fa-brands fa-snapchat"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="footer__links__box">
+            <h3 class="links__title">Our Menu</h3>
+            <a href="" class="footer__links">Cakes</a>
+            <a href="" class="footer__links">Pastries</a>
+            <a href="" class="footer__links">Beverages</a>
+          </div>
+
+          <div class="footer__links__box">
+            <h3 class="links__title">Useful Links</h3>
+            <a href="" class="footer__links">Terms of Service</a>
+            <a href="" class="footer__links">About Us</a>
+            <a href="" class="footer__links">Return Policy</a>
+            <a href="" class="footer__links">Discount</a>
+          </div>
+
+          <div class="footer__links__box">
+            <h3 class="links__title">Support</h3>
+            <a href="" class="footer__links">My account</a>
+            <a href="" class="footer__links">Support center</a>
+            <a href="" class="footer__links">Feedback</a>
+            <a href="" class="footer__links">Accessibility</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

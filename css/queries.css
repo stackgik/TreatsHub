@@ -1,0 +1,123 @@
+@media (max-width: 88em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .footer--wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+  }
+
+  .step__wrapper {
+    column-gap: 4rem;
+  }
+
+  .hero__title {
+    font-size: 5rem;
+  }
+
+  .hero__description {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero__title {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 62.7em) {
+  .hero__wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 8rem;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 3.5rem;
+  }
+
+  .hero__image {
+    width: 75%;
+    text-align: center;
+  }
+
+  .section__step {
+    flex: 1 1 100%;
+  }
+
+  .step__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    padding: 4rem;
+    width: 100%;
+
+    transform: translateX(100%);
+  }
+
+  .menu.click {
+    transform: translateX(0);
+  }
+
+  .menu a {
+    display: block;
+  }
+
+  .hamburger__wrapper {
+    display: block;
+  }
+
+  .modal {
+    padding: 6rem 3rem;
+  }
+  .cta__box {
+    padding: 0 1rem;
+  }
+
+  .section__spacing {
+    padding: 4rem 1rem;
+  }
+}
+
+@media (max-width: 26.5em) {
+  .newsletter__mail,
+  .subscribe__btn {
+    padding: 1.5rem;
+  }
+  .footer--wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial__box {
+    padding: 2rem 0.5rem;
+  }
+
+  .section__step {
+    padding: 4rem 2rem;
+  }
+
+  .section__spacing {
+    padding: 6rem 1rem;
+  }
+
+  .hero__nav {
+    flex-direction: column-reverse;
+  }
+}

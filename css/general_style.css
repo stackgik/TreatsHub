@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+
+  color: var(--raisin_black);
+}
+
+*::selection {
+  background-color: var(--pry_clr);
+  color: var(--white);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background-color: var(--bg_clr);
+}
+
+.zero__overflow {
+  overflow: hidden;
+}
+
+a {
+  display: inline-block;
+}
+
+input::placeholder {
+  font-size: 1.4rem;
+}
+
+.section__spacing {
+  padding: 6rem 4rem;
+}
+
+.img {
+  width: 100%;
+  align-self: center;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 0.8rem 2rem;
+  display: inline-block;
+  border-radius: 50rem;
+  font-weight: 600;
+  background-color: var(--pry_clr);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn span {
+  color: var(--white);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--pry-clr-shade1);
+}
+
+.btn__text {
+  margin-inline-end: 1rem;
+}
+
+.sign-in__btn:link,
+.sign-in__btn:visited {
+  background-color: #fffcf8;
+  color: var(--pry_clr);
+  border: 1px solid #fff4e6;
+  padding: 0.5rem 1rem;
+}
+
+.sign-in__btn:hover,
+.sign-in__btn:active {
+  background-color: #fff4e6;
+}
+
+.sign-up__btn:link,
+.sign-up__btn:visited {
+  padding: 0.5rem 1rem;
+}
+
+.flex {
+  flex: 1 1 50rem;
+}
+
+.inline__flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__wrapper {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  max-width: 125rem;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.section__title {
+  text-transform: uppercase;
+  color: var(--pry_clr);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.section__subtitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.section__description {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.active {
+  color: var(--pry_clr);
+}
+
+.active__page {
+  display: block;
+}
+
+.centered__btn {
+  display: block;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.centered__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--pry_clr);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.focus {
+  background-color: var(--pry_clr);
+  color: var(--white);
+}
+
+.focus:hover {
+  border-color: var(--pry-clr-shade1);
+  background-color: var(--pry-clr-shade1);
+}
